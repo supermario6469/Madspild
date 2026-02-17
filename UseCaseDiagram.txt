@@ -1,0 +1,42 @@
+---
+config:
+  layout: dagre
+---
+flowchart LR
+  subgraph System["Denmark Mod Madspild App"]
+    UC_Info["View facts & tips"]
+    UC_Commit["Make a commitment (pledge)"]
+    UC_BrowseEvents["Browse events"]
+    UC_CreateEvent["Create event"]
+    UC_Confirm["Receive confirmation"]
+  end
+
+  Consumer["Consumer"] --> UC_Info
+  Consumer --> UC_Commit
+  Consumer --> UC_BrowseEvents
+
+  Company["Company"] --> UC_Commit
+  Company --> UC_BrowseEvents
+
+  Org["Organization"] --> UC_Commit
+  Org --> UC_CreateEvent
+  Org --> UC_BrowseEvents
+
+  UC_Commit --> UC_Confirm
+  UC_CreateEvent --> UC_Confirm
+
+  %% ORDER MATTERS!
+  linkStyle 0 stroke:#1f77b4,stroke-width:2px
+  linkStyle 1 stroke:#1f77b4,stroke-width:2px
+  linkStyle 2 stroke:#1f77b4,stroke-width:2px
+
+  linkStyle 3 stroke:#2ca02c,stroke-width:2px
+  linkStyle 4 stroke:#2ca02c,stroke-width:2px
+
+  linkStyle 5 stroke:#9467bd,stroke-width:2px
+  linkStyle 6 stroke:#9467bd,stroke-width:2px
+  linkStyle 7 stroke:#9467bd,stroke-width:2px
+  
+  %% System Response
+  linkStyle 8 stroke:#7f7f7f,stroke-width:2px,stroke-dasharray:5 5
+  linkStyle 9 stroke:#7f7f7f,stroke-width:2px,stroke-dasharray:5 5
