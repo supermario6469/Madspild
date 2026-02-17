@@ -1,0 +1,75 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.events-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.events-hero-card {
+    width: 100%;
+    max-width: 900px;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.events-list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.event-list-item {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 20px 24px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    list-style: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #5aa37a;
+
+
+}
+
+.event-list-item:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.event-list-item h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1F2933;
+}
+
+.event-list-item h3 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.event-list-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1F2933;
+}

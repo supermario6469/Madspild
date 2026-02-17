@@ -54,3 +54,17 @@ body {
 .active-link {
     box-shadow: 0px 5px 0px 0px #A7D7B8;
 }
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 50px;
+    background: #239A48;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #2E7D32;
+}
