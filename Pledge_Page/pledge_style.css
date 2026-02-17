@@ -1,0 +1,112 @@
+.page {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.pledge {
+    display: flex;
+    justify-content: center;
+}
+
+.pledge-card {
+    width: 100%;
+    max-width: 900px;
+    padding: 48px 40px;
+
+    background: white;
+    border: 1px solid #E5E7EB;
+
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    text-align: center;
+}
+
+.pledge-title {
+    margin: 0 0 28px;
+    font-size: 34px;
+}
+
+.pledge-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 22px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2933;
+}
+
+input,
+select {
+    padding: 12px 12px;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    background: white;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #239A48;
+}
+
+.commitment-panel {
+    margin: 10px auto 0;
+    width: 100%;
+    max-width: 520px;
+    background-color: #E5E7EB;
+    padding: 26px 22px;
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+.commitment-title {
+    margin: 0 0 18px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.commitment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.check input {
+    width: 16px;
+    height: 16px;
+}
+
+.pledge-submit {
+    border: none;
+    cursor: pointer;
+}

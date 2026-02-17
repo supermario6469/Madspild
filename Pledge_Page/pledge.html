@@ -25,6 +25,66 @@
             </nav>
         </div>
     </header>
+
+    <main class="page">
+        <section class="pledge">
+            <div class="pledge-card">
+                <h1 class="pledge-title">Sign up and Choose your pledge!</h1>
+                <form action="#" class="pledge-form" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Name"> Name / Organization</label>
+                            <input id="name" name="name" type="text" placeholder="e.g., Alex / Company A" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="e.g., alex@gmail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userType">Select User Type</label>
+                        <select id="userType" name="userType" required>
+                            <option value="" selected disabled>Choose one...</option>
+                            <option value="consumer">Consumer</option>
+                            <option value="company">Company</option>
+                            <option value="organization">Organization</option>
+                        </select>
+                    </div>
+
+                    <div class="commitment-panel">
+                        <h2 class="commitment-title">Commitment Options</h2>
+                        <div class="commitment-options">
+                            <label class="check">
+                                <input type="checkbox" name="commitments" value="reduce_surplus" />
+                                Reduce surplus food
+                            </label>
+
+                            <label class="check">
+                                <input type="checkbox" name="commitments" value="inventory_planning" />
+                                Better inventory planning
+                            </label>
+
+                            <label class="check">
+                                <input type="checkbox" name="commitments" value="donate" />
+                                Donate excess food
+                            </label>
+
+                            <label class="check">
+                                <input type="checkbox" name="commitments" value="education" />
+                                Educate staff / participants
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary pledge-submit">
+                        Submit Commitment
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
